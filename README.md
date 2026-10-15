@@ -2,8 +2,6 @@
 
 An Excel-based analysis and interactive dashboard of 2022 online apparel sales across Indian marketplaces. The workbook takes ~31,000 raw order lines, summarises them with PivotTables, and presents the results as a one-page dashboard with charts and slicers.
 
-**File:** `Ecommerce_sales_data_analysis_using_excel.xlsx`
-
 ---
 
 ## Highlights
