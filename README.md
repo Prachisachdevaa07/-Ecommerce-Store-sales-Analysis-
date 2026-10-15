@@ -79,25 +79,6 @@ An Excel-based analysis and interactive dashboard of 2022 online apparel sales a
 
 ---
 
-## Data quality notes
-
-- `Qty` mixes numbers and text: `One` (7 rows) and `Two` (16 rows) should be converted to `1` and `2` before any quantity-based analysis.
-- `Category` has inconsistent capitalisation (`kurta` vs `Set`, `Western Dress`).
-- Sales totals include cancelled, returned and refunded lines. For net revenue, filter `Status` to `Delivered`.
-- `Age n gender` and `Chanels` show shares of total orders (percentages), not counts.
-- Sheet names `Chanels` (typo) and `Ecommerce sales report ` (trailing space) are kept as in the workbook.
-
----
-
-## How to use
-
-1. Open the workbook in **Microsoft Excel 2013 or later** (slicers require it).
-2. Go to the `Ecommerce sales report ` sheet to view the dashboard.
-3. Click slicer buttons to filter all linked charts.
-4. To refresh after editing the raw data: **Data → Refresh All**.
-
----
-
 ## Tools
 
 Microsoft Excel: PivotTables, PivotCharts, slicers and dashboard layout.
