@@ -1,85 +1,130 @@
-# E-commerce Sales Data Analysis
+# 🛍️ E-commerce Store Sales Data Analysis Using Excel
 
-An Excel-based analysis and interactive dashboard of 2022 online apparel sales across Indian marketplaces. The workbook takes ~31,000 raw order lines, summarises them with PivotTables, and presents the results as a one-page dashboard with charts and slicers.
+## 📌 Project Overview
+This project focuses on analyzing e-commerce sales data using Microsoft Excel to identify sales trends, understand customer purchasing behavior, evaluate sales channel performance, and generate actionable business insights.
 
----
+An interactive sales dashboard was developed using Excel to track key performance indicators (KPIs) and present data through charts, pivot tables, and visual summaries to support data-driven decision-making.
 
-## Highlights
+## 🎯 Project Objectives
+- Analyze monthly sales revenue and order volume.
+- Compare purchasing behavior across male and female customers.
+- Identify top-performing states based on sales revenue.
+- Evaluate order fulfillment outcomes, including delivered, cancelled, returned, and refunded orders.
+- Analyze sales channel contribution across e-commerce platforms.
+- Understand customer demographics using age groups and gender.
+- Identify opportunities to improve sales performance and operational efficiency.
 
-| Metric | Value |
-|---|---|
-| Order lines analysed | 31,047 |
-| Unique orders | 28,471 |
-| Unique customers | 28,437 |
-| Total sales | ₹21,176,377 |
-| Average line value | ≈ ₹682 |
-| Period covered | 4 Jan 2022 – 6 Dec 2022 |
-| Delivered rate | 92.2% (28,641 lines) |
+## 🛠️ Tools & Technologies
+- **Microsoft Excel**
+- Pivot Tables & Pivot Charts
+- Interactive Dashboard
+- Data Cleaning and Formatting
+- Data Aggregation and Analysis
+- KPI Reporting
+- Data Visualization
 
-### Key findings
+## 📂 Dataset Description
+The dataset contains approximately **31,048 e-commerce transaction records** with fields covering:
 
-- **Women drive most revenue:** ₹13.56M (≈64%) vs ₹7.61M (≈36%) for men.
-- **Top 5 states by sales:** Maharashtra (₹2.99M), Karnataka (₹2.65M), Uttar Pradesh (₹2.10M), Telangana (₹1.71M), Tamil Nadu (₹1.68M).
-- **Channels:** Amazon leads (~35% of orders), followed by Myntra (~23%) and Flipkart (~22%). Ajio, Nalli, Meesho and Others each account for under ~6%.
-- **Order status:** 28,641 delivered, 1,045 returned, 844 cancelled, 517 refunded.
-- **Monthly trend:** Sales peak in March (₹1.93M, 2,819 orders) and decline steadily to ₹1.62M in December. Orders and revenue move closely together.
-- **Top categories by revenue:** Set (₹10.5M), Kurta (₹4.96M), Western Dress (₹3.15M).
-- **Adult women (30–49)** are the single largest age/gender segment, at about 35% of orders.
+- Order ID and Customer ID
+- Gender, Age, and Age Group
+- Order Date and Month
+- Order Status
+- Sales Channel
+- Product SKU, Category, Size, and Quantity
+- Sales Amount and Currency
+- Shipping City, State, Postal Code, and Country
+- Business-to-Business (B2B) indicator
 
-> Note: December covers only the first week of the month (data ends 6 Dec), and January starts on the 4th, so monthly comparisons at the edges are not like-for-like.
+## 📊 Key Performance Indicators (KPIs)
+The analysis focuses on the following metrics:
 
----
+- Total Sales Revenue
+- Total Number of Orders
+- Monthly Sales Performance
+- Sales by Gender
+- State-wise Sales Revenue
+- Order Status Distribution
+- Sales Channel Contribution
+- Customer Demographic Analysis
 
-## Workbook structure
+## 🔍 Key Insights
 
-| Sheet | Purpose |
-|---|---|
-| `Ecommerce sales data analysis` | Raw data: 31,047 rows × 21 columns |
-| `Sales vs Orders` | PivotTable and chart: monthly sales amount vs order count |
-| `Men vs Women` | PivotTable and chart: sales split by gender |
-| `Top 5 States` | PivotTable and chart: top five states by sales |
-| `Order status` | PivotTable and chart: delivered / returned / cancelled / refunded |
-| `Age n gender` | PivotTable and chart: share of orders by age group and gender |
-| `Chanels` | PivotTable and chart: share of orders by sales channel |
-| `Ecommerce sales report ` | Final dashboard combining the six charts, with slicers |
+### 1. Overall Sales Performance
+- Total sales revenue was approximately **₹2.12 crore**.
+- The dataset contains approximately **31,048 orders**.
+- March recorded the highest monthly sales revenue, at approximately ₹19.28 lakh.
+- November recorded the lowest monthly sales revenue, at approximately ₹16.15 lakh.
 
----
+### 2. Sales by Gender
+- Female customers contributed approximately ₹1.36 crore in sales.
+- Male customers contributed approximately ₹76.14 lakh in sales.
+- Female customers accounted for approximately 64% of total sales revenue.
 
-## Data dictionary
+### 3. Top-Performing States
+The top five states by sales revenue were:
 
-| Column | Description |
-|---|---|
-| `index` | Row number |
-| `Order ID` | Order identifier (an order can span several lines) |
-| `Cust ID` | Customer identifier |
-| `Gender` | Men / Women |
-| `Age` | Customer age (18–78) |
-| `Age group` | Teenager (18–29), Adult (30–49), Senior (50–78) |
-| `Date` | Order date |
-| `Month` | Month abbreviation derived from `Date` |
-| `Status` | Delivered, Returned, Cancelled, Refunded |
-| `Channel` | Marketplace: Amazon, Myntra, Flipkart, Ajio, Nalli, Meesho, Others |
-| `SKU` | Product SKU code |
-| `Category` | Set, Kurta, Western Dress, Top, Saree, Ethnic Dress, Blouse, Bottom |
-| `Size` | Garment size (S–XXL etc.) |
-| `Qty` | Units ordered |
-| `Currency` | INR for all rows |
-| `Amount` | Line value in INR |
-| `ship-city`, `ship-state`, `ship-postal-code`, `ship-country` | Shipping destination (all India, 50 states/regions) |
-| `B2B` | TRUE for business orders (186 rows), otherwise FALSE |
+1. Maharashtra — ₹29.90 lakh
+2. Karnataka — ₹26.46 lakh
+3. Uttar Pradesh — ₹21.05 lakh
+4. Telangana — ₹17.12 lakh
+5. Tamil Nadu — ₹16.79 lakh
 
----
+Maharashtra generated the highest sales revenue among these states.
 
-## Method
+### 4. Order Status Analysis
+The dataset reports the following order outcomes:
 
-1. **Clean the data:** standardise columns, derive `Age group` and `Month`, and check for blanks and duplicates (none found).
-2. **Summarise with PivotTables:** one PivotTable per question (time, gender, geography, status, demographics, channel).
-3. **Visualise:** a bar, line or pie chart on each PivotTable.
-4. **Build the dashboard:** place all charts on a single report sheet and add slicers for interactive filtering.
+- Delivered: 28,641
+- Returned: 1,045
+- Cancelled: 844
+- Refunded: 517
 
----
+Delivered orders represented the largest share of recorded order statuses.
 
-## Tools
+### 5. Sales Channel Analysis
+The leading sales channels by share of recorded orders were:
 
-Microsoft Excel: PivotTables, PivotCharts, slicers and dashboard layout.
+- Amazon — 35.48%
+- Myntra — 23.36%
+- Flipkart — 21.59%
+- Ajio — 6.22%
+- Nalli — 4.78%
+- Meesho — 4.50%
+- Others — 4.06%
+
+Amazon was the leading sales channel, followed by Myntra and Flipkart.
+
+## 💡 Business Recommendations
+- **Improve seasonal planning:** Investigate monthly sales fluctuations and develop targeted campaigns during lower-performing months.
+- **Strengthen customer engagement:** Use customer demographic insights to create relevant marketing campaigns and product recommendations.
+- **Optimize regional sales strategies:** Focus on high-performing states while identifying opportunities in other regions.
+- **Monitor order exceptions:** Track cancellations, returns, and refunds to identify recurring operational issues.
+- **Optimize sales channels:** Evaluate channel-level performance to improve marketing allocation and sales efficiency.
+- **Improve KPI monitoring:** Use a consistent reporting dashboard to monitor trends and support operational decisions.
+
+## 📈 Dashboard Features
+The Excel dashboard provides a consolidated view of e-commerce performance through:
+
+- Monthly sales and order trends
+- Gender-wise sales comparison
+- Top five states by revenue
+- Order status breakdown
+- Sales channel distribution
+- Age-group and gender analysis
+
+## 📚 Skills Demonstrated
+- Data Analysis and Interpretation
+- Excel Dashboard Development
+- Pivot Table Reporting
+- KPI Tracking and Performance Monitoring
+- Business Intelligence
+- Customer and Sales Analysis
+- Operational Reporting
+- Data-Driven Decision-Making
+
+## 🏁 Conclusion
+This project demonstrates how Microsoft Excel can transform raw e-commerce transaction data into meaningful business insights. By analyzing sales trends, customer demographics, geographic performance, sales channels, and order statuses, the project supports better performance monitoring and helps identify opportunities to improve business operations.
+
+
 
