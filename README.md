@@ -159,13 +159,15 @@ Through this project, I practiced and developed the following skills:
 - Generating Insights from Data
 - Analytical Thinking and Problem-Solving
 
-## 🎓 Learning Source & Acknowledgment
+## 📚 Key Learnings
 
-This project was completed as part of my learning journey in **Microsoft Excel**. I used YouTube tutorials as a learning resource to understand the concepts and techniques involved in data cleaning, Pivot Tables, data visualization, and dashboard creation.
-
-While following the tutorials, I practiced the techniques in Excel, explored sales data, and worked on understanding how to turn raw data into meaningful business insights.
-
-This project helped me gain practical experience with Excel dashboards and improve my understanding of the data analysis process.
+- Learned data cleaning and formatting in Microsoft Excel.
+- Gained hands-on experience with Pivot Tables and Pivot Charts.
+- Learned to create interactive Excel dashboards.
+- Improved skills in data visualization and KPI tracking.
+- Practiced analyzing sales trends and customer behavior.
+- Learned to derive business insights from raw data.
+- Followed YouTube tutorials to learn and practice Excel data analysis techniques.
 
 ## 🏁 Conclusion
 
