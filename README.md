@@ -6,7 +6,7 @@ This project focuses on analyzing e-commerce sales data using **Microsoft Excel*
 
 An interactive Excel dashboard was developed using Pivot Tables, Pivot Charts, and data visualizations to track key performance indicators (KPIs) and present business performance in an easy-to-understand format.
 
-This project was completed as part of my learning journey in **Data Analytics**, with the help of YouTube tutorials and hands-on practice.
+This project was completed as part of my learning journey, with the help of YouTube tutorials and hands-on practice.
 
 ## 🎯 Project Objectives
 
@@ -158,16 +158,6 @@ Through this project, I practiced and developed the following skills:
 - Business Intelligence Fundamentals
 - Generating Insights from Data
 - Analytical Thinking and Problem-Solving
-
-## 📚 Key Learnings
-
-- Learned data cleaning and formatting in Microsoft Excel.
-- Gained hands-on experience with Pivot Tables and Pivot Charts.
-- Learned to create interactive Excel dashboards.
-- Improved skills in data visualization and KPI tracking.
-- Practiced analyzing sales trends and customer behavior.
-- Learned to derive business insights from raw data.
-- Followed YouTube tutorials to learn and practice Excel data analysis techniques.
 
 ## 🏁 Conclusion
 
